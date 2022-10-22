@@ -9,10 +9,21 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.33.0/dist/full.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <?php require "connect.php"; ?>
+  <?php require "config/connect.php"; ?>
 
 
-  <table class="mt-4 mx-auto">
+  
+  <form action="vendor/create.php" method="post" class="max-w-xl mx-auto mt-16">
+      <h2 class="text-xl font-bold">Записать новый элемент в таблицу</h2>
+      <div class="flex flex-col gap-y-4 mt-5">
+        <input type="text" name="title" placeholder="set name" class="bg-neutral p-2 rounded w-full" />
+        <textarea name="discription" class="bg-neutral p-2 rounded w-full"></textarea>
+        <input type="number" name="price" class="bg-neutral p-2 rounded w-full" />
+        <button class="btn" type="submit">add new element</button>  
+      </div>
+  </form>
+
+  <table class="mt-16 mx-auto max-w-xl">
     <thead>
       <tr class="grid grid-cols-4 gap-x-4 bg-neutral p-2 rounded">
         <th> id </th> <th> titile </th> <th> discription </th> <th> price </th>
@@ -26,7 +37,7 @@
       // print_r($products);
       foreach ($products as $product) {
         echo <<< "TABLE"
-        <tr class="grid grid-cols-4 gap-x-4 text-center ">
+        <tr class="grid grid-cols-4 gap-x-4 text-center border-b py-2 border-base-300">
           <td>{$product[0]}</td>
           <td>{$product[1]}</td>
           <td>{$product[3]}</td>
@@ -36,7 +47,8 @@
       }
       ?>
     </tbody>
-
   </table>
+
+
 
 </body>
