@@ -16,4 +16,4 @@ $discription = $_POST["discription"];
 $price = $_POST["price"];
 
 mysqli_query($connect, "INSERT INTO `products` (`id`, `tiltle`, `price`, `discription`) VALUES (NULL, '$title', '$price', '$discription')");
-?>
+header('Location: ../products.php');
