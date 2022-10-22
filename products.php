@@ -16,9 +16,9 @@
   <form action="vendor/create.php" method="post" class="max-w-xl mx-auto mt-16">
       <h2 class="text-xl font-bold">Записать новый элемент в таблицу</h2>
       <div class="flex flex-col gap-y-4 mt-5">
-        <input type="text" name="title" placeholder="set name" class="bg-neutral p-2 rounded w-full" />
-        <textarea name="discription" class="bg-neutral p-2 rounded w-full"></textarea>
-        <input type="number" name="price" class="bg-neutral p-2 rounded w-full" />
+        <input type="text" name="title" placeholder="title" class="bg-neutral p-2 rounded w-full" />
+        <textarea name="discription" placeholder="discription" class="bg-neutral p-2 rounded w-full"></textarea>
+        <input type="number" name="price" placeholder="price" class="bg-neutral p-2 rounded w-full" />
         <button class="btn" type="submit">add new element</button>  
       </div>
   </form>
