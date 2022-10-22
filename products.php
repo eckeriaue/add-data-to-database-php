@@ -23,7 +23,7 @@
       </div>
   </form>
 
-  <table class="mt-16 mx-auto max-w-xl">
+  <table class="my-16 mx-auto max-w-xl">
     <thead>
       <tr class="grid grid-cols-4 gap-x-4 bg-neutral p-2 rounded">
         <th> id </th> <th> titile </th> <th> discription </th> <th> price </th>
