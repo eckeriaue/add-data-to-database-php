@@ -7,7 +7,6 @@
   <title>Document</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.33.0/dist/full.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="h-screen w-full overflow-auto">
   <form action="./" method="get" class="flex flex-col gap-y-4 max-w-xs mx-auto pt-24">
