@@ -19,7 +19,13 @@
     <input type="text" name="field_3"   class="border-gray-500 border  rounded-md p-4" >
     <label class="translate-y-4 font-bold" for="field_4">введите поле4</label>
     <input type="number" name="field_4" class="border-gray-500 border  rounded-md p-4" >
-    <button type="submit" value="отправить" name="formSubmit" class="w-full bg-green-500 transition-colors hover:bg-green-400 rounded-md p-4 text-white"> записать </button>
+    <button
+    	type="submit"
+    	value="отправить"
+    	name="formSubmit"
+    	class="w-full bg-green-500 transition-colors hover:bg-green-400 rounded-md p-4 text-white">
+		записать
+    	</button>
     <?php
     if (isset($_GET['formSubmit'])) {
     } else {
