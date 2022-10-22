@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.33.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <form action="./" method="get" class="flex flex-col gap-y-4 max-w-xs mx-auto">
+<body class="h-screen w-full overflow-auto">
+  <form action="./" method="get" class="flex flex-col gap-y-4 max-w-xs mx-auto pt-24">
     <label class="translate-y-4 font-bold" for="field_1">введите поле1</label>
     <input type="text" name="field_1"   class="border-gray-500 border  rounded-md p-4" >
     <label class="translate-y-4 font-bold" for="field_2">введите поле2</label>
